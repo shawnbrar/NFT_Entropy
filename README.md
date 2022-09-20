@@ -15,110 +15,6 @@ Link to my kaggle notebook is [here](https://www.kaggle.com/code/sbrar0804/ether
 !pip install nfts
 ```
 
-    Collecting nfts
-      Downloading nfts-0.0.2-py3-none-any.whl (16 kB)
-    Requirement already satisfied: requests in /opt/conda/lib/python3.7/site-packages (from nfts) (2.25.1)
-    Requirement already satisfied: pandas in /opt/conda/lib/python3.7/site-packages (from nfts) (1.3.2)
-    Requirement already satisfied: tqdm in /opt/conda/lib/python3.7/site-packages (from nfts) (4.62.1)
-    Collecting web3
-      Downloading web3-5.30.0-py3-none-any.whl (501 kB)
-    [K     |████████████████████████████████| 501 kB 2.1 MB/s 
-    [?25hCollecting moonstreamdb
-      Downloading moonstreamdb-0.3.2-py3-none-any.whl (7.4 kB)
-    Collecting humbug
-      Downloading humbug-0.2.7-py3-none-any.whl (11 kB)
-    Collecting psycopg2-binary
-      Downloading psycopg2_binary-2.9.3-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (3.0 MB)
-    [K     |████████████████████████████████| 3.0 MB 59.2 MB/s 
-    [?25hRequirement already satisfied: alembic in /opt/conda/lib/python3.7/site-packages (from moonstreamdb->nfts) (1.7.3)
-    Requirement already satisfied: sqlalchemy in /opt/conda/lib/python3.7/site-packages (from moonstreamdb->nfts) (1.4.22)
-    Requirement already satisfied: importlib-metadata in /opt/conda/lib/python3.7/site-packages (from alembic->moonstreamdb->nfts) (3.4.0)
-    Requirement already satisfied: Mako in /opt/conda/lib/python3.7/site-packages (from alembic->moonstreamdb->nfts) (1.1.5)
-    Requirement already satisfied: importlib-resources in /opt/conda/lib/python3.7/site-packages (from alembic->moonstreamdb->nfts) (5.2.2)
-    Requirement already satisfied: greenlet!=0.4.17 in /opt/conda/lib/python3.7/site-packages (from sqlalchemy->moonstreamdb->nfts) (1.1.1)
-    Requirement already satisfied: zipp>=0.5 in /opt/conda/lib/python3.7/site-packages (from importlib-metadata->alembic->moonstreamdb->nfts) (3.5.0)
-    Requirement already satisfied: typing-extensions>=3.6.4 in /opt/conda/lib/python3.7/site-packages (from importlib-metadata->alembic->moonstreamdb->nfts) (3.7.4.3)
-    Requirement already satisfied: MarkupSafe>=0.9.2 in /opt/conda/lib/python3.7/site-packages (from Mako->alembic->moonstreamdb->nfts) (2.0.1)
-    Requirement already satisfied: numpy>=1.17.3 in /opt/conda/lib/python3.7/site-packages (from pandas->nfts) (1.19.5)
-    Requirement already satisfied: python-dateutil>=2.7.3 in /opt/conda/lib/python3.7/site-packages (from pandas->nfts) (2.8.0)
-    Requirement already satisfied: pytz>=2017.3 in /opt/conda/lib/python3.7/site-packages (from pandas->nfts) (2021.1)
-    Requirement already satisfied: six>=1.5 in /opt/conda/lib/python3.7/site-packages (from python-dateutil>=2.7.3->pandas->nfts) (1.15.0)
-    Requirement already satisfied: idna<3,>=2.5 in /opt/conda/lib/python3.7/site-packages (from requests->nfts) (2.10)
-    Requirement already satisfied: chardet<5,>=3.0.2 in /opt/conda/lib/python3.7/site-packages (from requests->nfts) (4.0.0)
-    Requirement already satisfied: urllib3<1.27,>=1.21.1 in /opt/conda/lib/python3.7/site-packages (from requests->nfts) (1.26.6)
-    Requirement already satisfied: certifi>=2017.4.17 in /opt/conda/lib/python3.7/site-packages (from requests->nfts) (2021.5.30)
-    Collecting eth-account<0.6.0,>=0.5.7
-      Downloading eth_account-0.5.9-py3-none-any.whl (101 kB)
-    [K     |████████████████████████████████| 101 kB 7.4 MB/s 
-    [?25hRequirement already satisfied: protobuf<4,>=3.10.0 in /opt/conda/lib/python3.7/site-packages (from web3->nfts) (3.18.0)
-    Requirement already satisfied: aiohttp<4,>=3.7.4.post0 in /opt/conda/lib/python3.7/site-packages (from web3->nfts) (3.7.4.post0)
-    Collecting hexbytes<1.0.0,>=0.1.0
-      Downloading hexbytes-0.3.0-py3-none-any.whl (6.4 kB)
-    Requirement already satisfied: jsonschema<5,>=3.2.0 in /opt/conda/lib/python3.7/site-packages (from web3->nfts) (3.2.0)
-    Collecting eth-rlp<0.3
-      Downloading eth_rlp-0.2.1-py3-none-any.whl (5.0 kB)
-    Collecting eth-hash[pycryptodome]<1.0.0,>=0.2.0
-      Downloading eth_hash-0.5.0-py3-none-any.whl (8.9 kB)
-    Collecting eth-typing<3.0.0,>=2.0.0
-      Downloading eth_typing-2.3.0-py3-none-any.whl (6.2 kB)
-    Collecting eth-utils<2.0.0,>=1.9.5
-      Downloading eth_utils-1.10.0-py3-none-any.whl (24 kB)
-    Collecting ipfshttpclient==0.8.0a2
-      Downloading ipfshttpclient-0.8.0a2-py3-none-any.whl (82 kB)
-    [K     |████████████████████████████████| 82 kB 598 kB/s 
-    [?25hCollecting lru-dict<2.0.0,>=1.1.6
-      Downloading lru_dict-1.1.8-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (26 kB)
-    Collecting websockets<10,>=9.1
-      Downloading websockets-9.1-cp37-cp37m-manylinux2010_x86_64.whl (103 kB)
-    [K     |████████████████████████████████| 103 kB 67.8 MB/s 
-    [?25hCollecting eth-abi<3.0.0,>=2.0.0b6
-      Downloading eth_abi-2.2.0-py3-none-any.whl (28 kB)
-    Collecting multiaddr>=0.0.7
-      Downloading multiaddr-0.0.9-py2.py3-none-any.whl (16 kB)
-    Requirement already satisfied: yarl<2.0,>=1.0 in /opt/conda/lib/python3.7/site-packages (from aiohttp<4,>=3.7.4.post0->web3->nfts) (1.6.3)
-    Requirement already satisfied: async-timeout<4.0,>=3.0 in /opt/conda/lib/python3.7/site-packages (from aiohttp<4,>=3.7.4.post0->web3->nfts) (3.0.1)
-    Requirement already satisfied: attrs>=17.3.0 in /opt/conda/lib/python3.7/site-packages (from aiohttp<4,>=3.7.4.post0->web3->nfts) (21.2.0)
-    Requirement already satisfied: multidict<7.0,>=4.5 in /opt/conda/lib/python3.7/site-packages (from aiohttp<4,>=3.7.4.post0->web3->nfts) (5.1.0)
-    Collecting parsimonious<0.9.0,>=0.8.0
-      Downloading parsimonious-0.8.1.tar.gz (45 kB)
-    [K     |████████████████████████████████| 45 kB 2.2 MB/s 
-    [?25hCollecting eth-keyfile<0.6.0,>=0.5.0
-      Downloading eth_keyfile-0.5.1-py3-none-any.whl (8.3 kB)
-    Collecting eth-keys<0.4.0,>=0.3.4
-      Downloading eth_keys-0.3.4-py3-none-any.whl (21 kB)
-    Collecting bitarray<3,>=1.2.1
-      Downloading bitarray-2.6.0-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (235 kB)
-    [K     |████████████████████████████████| 235 kB 66.2 MB/s 
-    [?25hCollecting rlp<3,>=1.0.0
-      Downloading rlp-2.0.1-py2.py3-none-any.whl (20 kB)
-    Collecting pycryptodome<4,>=3.6.6
-      Downloading pycryptodome-3.15.0-cp35-abi3-manylinux2010_x86_64.whl (2.3 MB)
-    [K     |████████████████████████████████| 2.3 MB 43.9 MB/s 
-    [?25hRequirement already satisfied: cytoolz<1.0.0,>=0.9.0 in /opt/conda/lib/python3.7/site-packages (from eth-keyfile<0.6.0,>=0.5.0->eth-account<0.6.0,>=0.5.7->web3->nfts) (0.11.0)
-    Requirement already satisfied: toolz>=0.8.0 in /opt/conda/lib/python3.7/site-packages (from cytoolz<1.0.0,>=0.9.0->eth-keyfile<0.6.0,>=0.5.0->eth-account<0.6.0,>=0.5.7->web3->nfts) (0.11.1)
-    Collecting eth-utils<2.0.0,>=1.9.5
-      Downloading eth_utils-1.9.5-py3-none-any.whl (23 kB)
-    Requirement already satisfied: setuptools in /opt/conda/lib/python3.7/site-packages (from jsonschema<5,>=3.2.0->web3->nfts) (57.4.0)
-    Requirement already satisfied: pyrsistent>=0.14.0 in /opt/conda/lib/python3.7/site-packages (from jsonschema<5,>=3.2.0->web3->nfts) (0.17.3)
-    Collecting netaddr
-      Downloading netaddr-0.8.0-py2.py3-none-any.whl (1.9 MB)
-    [K     |████████████████████████████████| 1.9 MB 54.0 MB/s 
-    [?25hCollecting varint
-      Downloading varint-1.0.2.tar.gz (1.9 kB)
-    Requirement already satisfied: base58 in /opt/conda/lib/python3.7/site-packages (from multiaddr>=0.0.7->ipfshttpclient==0.8.0a2->web3->nfts) (2.1.0)
-    Building wheels for collected packages: parsimonious, varint
-      Building wheel for parsimonious (setup.py) ... [?25l- \ done
-    [?25h  Created wheel for parsimonious: filename=parsimonious-0.8.1-py3-none-any.whl size=42724 sha256=0d866b4c874844eb33a5655ea990ef7caabd8dc063b61e006a79a5d156c10284
-      Stored in directory: /root/.cache/pip/wheels/88/5d/ba/f27d8af07306b65ee44f9d3f9cadea1db749a421a6db8a99bf
-      Building wheel for varint (setup.py) ... [?25l- \ done
-    [?25h  Created wheel for varint: filename=varint-1.0.2-py3-none-any.whl size=1979 sha256=b96a14c80c3832875469ec215acaaf0f2a11aa6d94ec38f1c92faf11b895f264
-      Stored in directory: /root/.cache/pip/wheels/69/21/07/09f1c6a7d9b59377aa6d98da6efdd670f7ca40aabd93d02704
-    Successfully built parsimonious varint
-    Installing collected packages: eth-typing, eth-hash, eth-utils, varint, rlp, pycryptodome, parsimonious, netaddr, hexbytes, eth-keys, multiaddr, eth-rlp, eth-keyfile, eth-abi, bitarray, websockets, psycopg2-binary, lru-dict, ipfshttpclient, eth-account, web3, moonstreamdb, humbug, nfts
-    Successfully installed bitarray-2.6.0 eth-abi-2.2.0 eth-account-0.5.9 eth-hash-0.5.0 eth-keyfile-0.5.1 eth-keys-0.3.4 eth-rlp-0.2.1 eth-typing-2.3.0 eth-utils-1.9.5 hexbytes-0.3.0 humbug-0.2.7 ipfshttpclient-0.8.0a2 lru-dict-1.1.8 moonstreamdb-0.3.2 multiaddr-0.0.9 netaddr-0.8.0 nfts-0.0.2 parsimonious-0.8.1 psycopg2-binary-2.9.3 pycryptodome-3.15.0 rlp-2.0.1 varint-1.0.2 web3-5.30.0 websockets-9.1
-    [33mWARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv[0m
-
-
 
 ```python
 import os
@@ -149,19 +45,6 @@ current_owners_df.head()
 
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
